@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.dashboard.PvtBrowsingFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Private🔍🔎Browser"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/searchImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="40dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#B8B7B7">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/search_logo"/>
+        </androidx.cardview.widget.CardView>
+
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            app:cardCornerRadius="20dp">-->
+<!--            -->
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+        <EditText
+            android:id="@+id/editQuery"
+            android:layout_width="355dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:lines="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btnbg"
+            android:fontFamily="serif"
+            android:paddingStart="8dp"
+            android:hint="Search"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

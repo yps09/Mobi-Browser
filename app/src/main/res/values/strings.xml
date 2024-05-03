@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Viyo browse</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Private</string>
+    <string name="title_notifications">History</string>
+</resources>

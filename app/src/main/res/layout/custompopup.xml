@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupmenu"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="#D1CCCC">
+
+
+        <TextView
+            android:id="@+id/CopyUrl"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Copy Url"
+            android:padding="10dp"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/Sharingbtn"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Share"
+            android:layout_marginTop="80dp"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/NewTab"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Open new Tab"
+            android:layout_marginTop="160dp"
+            android:textSize="21dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/Closetab"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Close"
+            android:layout_marginTop="240dp"
+            android:textSize="21dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+
+
+</androidx.cardview.widget.CardView>

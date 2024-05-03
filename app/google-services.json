@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "471217664833",
+    "project_id": "viyo-browse",
+    "storage_bucket": "viyo-browse.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471217664833:android:912d3b616123dc3bbe67c0",
+        "android_client_info": {
+          "package_name": "com.android.viyobrowse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9e0SwsOqovwK-BbEZ0iPP4_bWKiHa6nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Serchingbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+       
+        
+        <EditText
+            android:id="@+id/serchquery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:hint="search or type"
+            android:padding="8dp"
+            android:background="@null"
+            android:layout_marginStart="105dp"
+            android:layout_toStartOf="@+id/searchBtn"
+            android:drawablePadding="8dp"
+            />
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="40dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            />
+        <ImageView
+            android:id="@+id/forwardbtn"
+            android:layout_width="40dp"
+            android:padding="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/baseline_arrow_back_ios_new_24"
+            android:rotation="180"
+            />
+        <ImageView
+            android:id="@+id/faviconicon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/ic_launcher_foreground"
+            />
+
+        <ImageView
+            android:id="@+id/serchinbtn"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:src="@drawable/search_logo"
+            android:padding="5dp"
+            android:clickable="true"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Serchingbar">
+        <WebView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
